@@ -1,46 +1,151 @@
-import React, { useState } from 'react'
-import { ShoppingBag, Heart, Star, Package } from 'lucide-react'
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    
+    <title>Digital Envisioned | Premium Product Bundles for Scale</title>
+    <meta name="description" content="Digital Envisioned offers high-conversion funnel and digital product bundles, curated for immediate deployment and business scaling.">
+    <meta name="keywords" content="digital products, funnel bundles, high-ticket, Vercel deployment, online course, digital assets, business scale">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Digital Envisioned Brand Styles --- */
+        :root {
+            --dark-primary: #081827; /* Deep Navy Background */
+            --accent-gold: #CBB26A;  /* Premium Gold Accent */
+            --light-text: #E5E7EB;   /* Off-white Text */
+        }
+        body {
+            background-color: var(--dark-primary);
+            color: var(--light-text);
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(180deg, var(--dark-primary) 0%, #021018 100%);
+            padding: 4rem 1.5rem;
+        }
+        .btn-gold {
+            background-color: var(--accent-gold);
+            color: var(--dark-primary); 
+            transition: background-color 0.3s;
+            font-weight: 800;
+        }
+        .btn-gold:hover {
+            background-color: #DBC485; 
+        }
+        .bundle-card {
+            background-color: rgba(255, 255, 255, 0.05); 
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 4px 15px rgba(203, 178, 106, 0.2);
+            transition: transform 0.3s;
+        }
+        .bundle-card:hover {
+            transform: translateY(-5px);
+        }
+        /* Mobile adjustment for heading size */
+        @media (min-width: 768px) {
+             .h1-desktop { font-size: 4rem; } /* 6xl equivalent */
+        }
+    </style>
+</head>
 
-export default function LuxuryEcommercePreview() {
-  const [activeTab, setActiveTab] = useState('storefront')
+<body class="antialiased">
 
-  // ✅ Current live products (Stripe + Affiliate)
-  const products = [
-    {
-      id: 1,
-      name: 'The Ultimate Coaching Guide',
-      price: 19,
-      image: '/ultimate-coaching-guide.jpg',
-      alt: 'The Ultimate Coaching Guide ebook cover',
-      stock: 50,
-      rating: 4.9,
-      link: 'https://buy.stripe.com/bJeeVcgB4dgmdvN9Bz77O20'
-    },
-    {
-      id: 2,
-      name: 'Grow Your Business with Digital Marketing',
-      price: 18,
-      image: '/grow-your-business-digital-marketing.jpg',
-      alt: 'Grow Your Business with Digital Marketing ebook cover',
-      stock: 50,
-      rating: 4.8,
-      link: 'https://buy.stripe.com/4gM4gy1Ga6RYgHZ9Bz77O1Q'
-    },
-    {
-      id: 3,
-      name: 'Digital Growth Planner',
-      price: 17,
-      image: '/digital-growth-planner.jpg',
-      alt: 'Digital Growth Planner ebook cover',
-      stock: 50,
-      rating: 4.8,
-      link: 'https://buy.stripe.com/14A8wOckOdgmajB4hf77O1L'
-    },
-    // Affiliate offers as special “products”
-    {
-      id: 4,
-      name: '5 Best Weight Loss Program',
-      price: null,
+    <section class="hero-section text-center">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-sm uppercase tracking-widest text-yellow-400 mb-3">Digital Envisioned</p>
+            
+            <h1 class="text-5xl h1-desktop font-extrabold leading-tight mb-4">
+                Digital Products By The Bundle.
+            </h1>
+            
+            <p class="text-xl md:text-2xl font-light mb-8 max-w-xl mx-auto text-gray-400">
+                Get High-Conversion Funnels & Assets, Curated and Bundled for Scale—All ready for your Vercel deployment.
+            </p>
+            
+            <a href="#bundles" class="btn-gold inline-block py-4 px-12 rounded-lg text-xl shadow-lg hover:shadow-xl transition duration-300">
+                Explore Premium Bundles
+            </a>
+            
+            <div class="mt-12">
+                <img src="https://via.placeholder.com/800x450/081827/CBB26A?text=Digital+Envisioned+Bundle+Mockup" alt="High-Converting Digital Product Bundles" class="mx-auto rounded-xl shadow-2xl border-2 border-yellow-500/50">
+            </div>
+        </div>
+    </section>
+
+    <section id="bundles" class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-yellow-500 mb-10 border-b border-gray-700 pb-4">
+                Select Your Path to Scale
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bundle-card p-6 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-3 text-yellow-300">The Visionary Launchpad</h3>
+                    <p class="text-gray-400 mb-4">The essential assets bundle for immediate high-ticket deployment.</p>
+                    <img src="https://via.placeholder.com/400x250/081827/CBB26A?text=Bundle+1" alt="Visionary Launchpad Bundle" class="mx-auto rounded-lg mb-4">
+                    <p class="text-3xl font-extrabold text-white mb-4">$2,497</p>
+                    <a href="YOUR_CHECKOUT_LINK_1" class="block btn-gold py-3 rounded-md font-semibold">
+                        Purchase Bundle
+                    </a>
+                </div>
+
+                <div class="bundle-card p-6 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-3 text-yellow-300">The Platinum Funnel Kit</h3>
+                    <p class="text-gray-400 mb-4">Prestige bundle focused on automated lead qualification and conversion.</p>
+                    <img src="https://via.placeholder.com/400x250/081827/CBB26A?text=Bundle+2" alt="Platinum Funnel Kit Bundle" class="mx-auto rounded-lg mb-4">
+                    <p class="text-3xl font-extrabold text-white mb-4">$2,497</p>
+                    <a href="YOUR_CHECKOUT_LINK_2" class="block btn-gold py-3 rounded-md font-semibold">
+                        Purchase Bundle
+                    </a>
+                </div>
+
+                <div class="bundle-card p-6 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-3 text-yellow-300">The Scaling Authority Pack</h3>
+                    <p class="text-gray-400 mb-4">Advanced resources for expanding market reach and increasing AOV.</p>
+                    <img src="https://via.placeholder.com/400x250/081827/CBB26A?text=Bundle+3" alt="Scaling Authority Pack Bundle" class="mx-auto rounded-lg mb-4">
+                    <p class="text-3xl font-extrabold text-white mb-4">$2,497</p>
+                    <a href="YOUR_CHECKOUT_LINK_3" class="block btn-gold py-3 rounded-md font-semibold">
+                        Purchase Bundle
+                    </a>
+                </div>
+
+                <div class="bundle-card p-6 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-3 text-yellow-300">The Envisioned Masterpiece</h3>
+                    <p class="text-gray-400 mb-4">A full-stack collection of all premium digital products for maximum value.</p>
+                    <img src="https://via.placeholder.com/400x250/081827/CBB26A?text=Bundle+4" alt="Envisioned Masterpiece Bundle" class="mx-auto rounded-lg mb-4">
+                    <p class="text-3xl font-extrabold text-white mb-4">$2,497</p>
+                    <a href="YOUR_CHECKOUT_LINK_4" class="block btn-gold py-3 rounded-md font-semibold">
+                        Purchase Bundle
+                    </a>
+                </div>
+                
+                <div class="bundle-card p-6 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold mb-3 text-yellow-300">The Strategic Automation Flow</h3>
+                    <p class="text-gray-400 mb-4">The automation and integration templates for streamlining your entire back-end.</p>
+                    <img src="https://via.placeholder.com/400x250/081827/CBB26A?text=Bundle+5" alt="Strategic Automation Flow Bundle" class="mx-auto rounded-lg mb-4">
+                    <p class="text-3xl font-extrabold text-white mb-4">$2,497</p>
+                    <a href="YOUR_CHECKOUT_LINK_5" class="block btn-gold py-3 rounded-md font-semibold">
+                        Purchase Bundle
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800">
+        <p>&copy; 2025 Digital Envisioned. All Rights Reserved. | <a href="#" class="hover:text-yellow-500">Privacy Policy</a></p>
+        <p class="mt-2">Built for high conversion and deployed instantly on Vercel.</p>
+    </footer>
+
+</body>
+</html>
       image: '/affiliate-weightloss.jpg',
       alt: '5 Best Weight Loss affiliate offer',
       stock: null,
